@@ -9,7 +9,7 @@
         $dbName = 'equipe6';
         $dbuser = 'root';
         $dbpassword = 'password';
-        $dbhost = '172.25.0.2';
+        $dbhost = getenv('DB_HOST');
         $dbPort = '3306';
 
         $connection = mysqli_connect($dbhost, $dbuser, $dbpassword, $dbName, $dbPort);

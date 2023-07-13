@@ -9,6 +9,8 @@ services:
       - 8080:80
     volumes:
       - ./src:/var/www/html
+    environment:
+      - DB_HOST=bd
     depends_on:
       - bd
     command: >
